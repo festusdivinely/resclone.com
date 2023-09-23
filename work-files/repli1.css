@@ -1,0 +1,599 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.header {
+  width: fit-content;
+  height: fit-content;
+}
+
+.firstSec {
+  width: 100%;
+  height: fit-content;
+  margin-bottom: 100px;
+}
+
+.navThings {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  margin-left: 16%;
+}
+
+.fudo {
+  width: fit-content;
+  height: fit-content;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fudoLogo {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  padding: 10px 10px;
+  background-color: red;
+  color: white;
+  font-weight: 800;
+  font-size: clamp(20px, 1vw, 2vw);
+}
+
+.fudoText {
+  margin-left: 20px;
+  margin-top: 12px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.do {
+  margin-left: 10px;
+}
+
+.navLinks {
+  width: fit-content;
+  height: fit-content;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+.service,
+.menu,
+.contact {
+  margin-left: clamp(10px, 2vw, 80px);
+  display: flex;
+}
+
+.hamburger {
+  width: fit-content;
+  height: fit-content;
+  display: none;
+  margin-top: 25px;
+}
+
+.hamburger img {
+  width: 30px;
+  height: 30px;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.navEnd {
+  margin-top: 20px;
+  margin-left: auto;
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+}
+
+.login {
+  color: #000;
+}
+
+.login img {
+  width: 30px;
+  height: 30px;
+  margin-top: 7px;
+}
+
+.login,
+.cart {
+  margin-left: 1vw;
+}
+
+.whyFudo {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: red;
+  white-space: nowrap;
+}
+
+.downDot {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute; /* or use 'relative' or 'fixed' based on your needs */
+  top: 100%; /* adjust as needed */
+  left: 50%; /* adjust as needed */
+  transform: translate(-50%, -50%); /* Center the element in its container */
+}
+
+.downIcon {
+  margin-left: 0.6vw;
+}
+
+.menu,
+.service {
+  margin-top: 10px;
+}
+
+.search img,
+.cart img,
+.login img {
+  width: 30px;
+  height: 30px;
+}
+
+.login svg {
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.search img,
+.cart img {
+  margin-top: 0.8vw;
+}
+
+.indication {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  margin-left: 13px;
+  margin-top: clamp(0vh, 1.3vh, 1.3vh);
+  padding: 10px;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.login {
+  background-color: red;
+  padding: 5px 40px;
+  color: #fff;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.secondSec {
+  padding: 2.8vh 18%;
+  margin-top: 1.5vh;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.left {
+  width: fit-content;
+  flex: 1;
+}
+
+.MTF {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 30px;
+  background-color: rgba(255, 0, 0, 0.1);
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff010199;
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 6vh;
+}
+
+.MTFImg {
+  margin-left: 40px;
+}
+
+.MTFImg img {
+  width: 30px;
+  height: 35px;
+}
+
+.writeUpDiv {
+  height: fit-content;
+  width: 80ch;
+}
+
+.writeUp {
+  font-size: 80px;
+  letter-spacing: 3px;
+  line-height: 1;
+}
+
+.foodWrite {
+  color: red;
+}
+
+.subWriteUpDiv {
+  margin-top: 2.5vh;
+  width: 70ch;
+}
+
+.subWriteUp {
+  font-size: 28px;
+  font-weight: 300;
+  color: #0009;
+  line-height: 1.6;
+}
+
+.getWatch {
+  margin: 5vh 0vh;
+  display: flex;
+}
+
+.getStarted {
+  width: fit-content;
+  height: fit-content;
+  padding: 10px 60px;
+  background-color: red;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.watchVideo {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 30px;
+  box-shadow: 4px 4px 20px #0002;
+}
+
+.watchVidWrite {
+  font-size: 25px;
+  padding: 10px 0px;
+  font-weight: 700;
+  color: #292727;
+}
+
+.ourHappyFaces {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  margin-left: -35px;
+}
+
+.faces {
+  position: relative;
+  margin-right: 30px;
+}
+
+.faces img {
+  width: 150px;
+  height: 150px;
+}
+
+.face2,
+.face3 {
+  margin-left: -90px;
+}
+
+.OHC {
+  width: fit-content;
+  height: fit-content;
+  margin-top: 10px;
+}
+
+.OHCWrite {
+  font-size: 30px;
+  margin-bottom: 1.5vh;
+}
+
+.OHCReview {
+  display: flex;
+  width: fit-content;
+  height: fit-content;
+  align-items: center;
+  justify-content: center;
+}
+
+.starIcon img {
+  width: 30px;
+  height: 30px;
+}
+
+.rating,
+.reviewCont {
+  font-size: 30px;
+}
+
+.reviewCont {
+  color: #0008;
+}
+
+.right {
+  width: auto;
+  flex: 1;
+  position: relative;
+}
+
+.up {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+
+.circle {
+  width: 500px;
+  height: 500px;
+  background-color: red;
+  border-radius: 50%;
+  position: relative;
+  left: -5px;
+}
+
+.bigWoman {
+  position: absolute;
+  top: -75px;
+  right: -100px;
+}
+
+.bigWoman img {
+  width: 700px;
+  height: 600px;
+}
+
+.down {
+  height: fit-content;
+  width: fit-content;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 5px 10px;
+  display: flex;
+  margin-left: -20px;
+  box-shadow: 1px 1px 10px #0001;
+}
+
+.smallFoodShow img {
+  width: 130px;
+  height: 100px;
+}
+
+.fiiledStar,
+.emptyStar {
+  width: 20px;
+  height: 20px;
+}
+
+.stars2,
+.writeup,
+.amount {
+  margin: 0px 10px;
+  margin-right: 120px;
+}
+
+.amount {
+  margin-left: 20px;
+  font-size: 25px;
+}
+
+.stars2 {
+  margin: 10px 20px;
+}
+
+.discount {
+  position: relative;
+}
+
+.discount img {
+  width: 70px;
+  height: 100px;
+}
+
+.writeup {
+  font-size: 25px;
+  white-space: nowrap;
+}
+
+.dollar {
+  color: rgb(237, 13, 13);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.discountWrite {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-weight: 800;
+}
+
+.clock, .smallSquare, .rope, .callRichardson {
+  position: absolute;
+}
+
+.rope {
+  top: -30px;
+  right: -50px;
+}
+
+.rope img{
+  width: 130px;
+  height: 130px;
+}
+
+.callRichardson {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 50px;
+  top: 330px;
+  right: 330px;
+  white-space: nowrap;
+}
+
+.richardson img {
+ width: 40px;
+ height: 40px;
+}
+
+.phone {
+  background-color: red;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.phone img {
+  width: 21px;
+  height: 21px;
+}
+
+.richardsonText {
+  margin: 0 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-right: 30px;
+}
+
+.clock {
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(239, 197, 7);
+  padding: 20px;
+  border-radius: 12px;
+  top: -60px;
+  right: 450px;
+
+  /* Apply a rotation to slant the element */
+  transform: rotate(-30deg); /* Adjust the angle as needed */
+  transform-origin: bottom center; /* Adjust the origin point if necessary */
+}
+
+.clock img {
+  width: 40px;
+  height: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  /* CSS rules to apply when the screen width is 768 pixels or less */
+  .navLinks {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  /* CSS rules to apply when the screen width is 768 pixels or less */
+  .secondSec {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    order: 2; /* Set a lower order for left section, so it appears below */
+    margin-top: 0;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .leftThings {
+    margin-left: 150px;
+  }
+
+  .right {
+    order: 1; /* Set a higher order for right section, so it appears above */
+    margin-top: 0;
+    padding: 0px;
+    margin-left: 0px;
+  }
+
+  .circle {
+    padding-left: 0px;
+    margin-left: 0px;
+    left: 90px;
+  }
+
+  .bigWoman {
+    padding-left: 0px;
+    margin-left: 0px;
+    left: 10px;
+  }
+
+  .down {
+    margin-left: 90px;
+  }
+
+  .navEnd {
+    margin-left: 100px;
+  }
+
+  .fudo {
+    padding-left: 0;
+    margin-left: 0px;
+  }
+
+  .fudoLogo {
+    margin-left: 0px;
+  }
+
+  .firstSec {
+   padding-right: 0px;
+  }
+ 
+  .navEnd {
+    padding-left: 100px;
+  }
+
+  .hamburger {
+    margin-left: 10px;
+  }
+
+  .cart, .login {
+    margin-left: 10px;
+  }
+
+}

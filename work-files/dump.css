@@ -1,0 +1,237 @@
+
+.firstSec {
+    padding: 2.8vh 5vw;
+    width: 100%;
+    height: fit-content;
+    background-color: green;
+  }
+  
+  .navThings {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+  }
+  
+  .fudo {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fudoLogo {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    padding: 10px 10px;
+    background-color: red;
+    color: white;
+    font-weight: 800;
+    font-size: clamp(20px, 1vw, 2vw);
+  }
+  
+  .fudoText {
+    margin-left: 20px;
+    margin-top: 12px;
+    font-size: 25px;
+    font-weight: 800;
+  }
+  
+  .do {
+    margin-left: 10px;
+  }
+  
+  .navLinks {
+    width: fit-content;
+    height: fit-content;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 30px;
+  }
+  
+  .service,
+  .menu,
+  .contact {
+    margin-left: clamp(10px, 2vw, 80px);
+    display: flex;
+  }
+  
+  .hamburger {
+    width: fit-content;
+    height: fit-content;
+    display: none;
+  }
+  
+  .hamburger img {
+    width: 30px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+  
+  .navEnd {
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+  }
+  
+  .login {
+    color: #000;
+  }
+  
+  .login img {
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+  }
+  
+  .login,
+  .cart {
+    margin-left: 1vw;
+  }
+  
+  .whyFudo {
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    color: red;
+  }
+  
+  .downDot {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute; /* or use 'relative' or 'fixed' based on your needs */
+    top: 100%; /* adjust as needed */
+    left: 50%; /* adjust as needed */
+    transform: translate(-50%, -50%); /* Center the element in its container */
+  }
+  
+  .downIcon {
+    margin-left: 0.6vw;
+  }
+  
+  .menu,
+  .service {
+    margin-top: 10px;
+  }
+  
+  .search img,
+  .cart img,
+  .login img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .login svg {
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+  }
+  
+  .search img,
+  .cart img {
+    margin-top: 0.8vw;
+  }
+  
+  .indication {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin-left: 13px;
+    margin-top: clamp(0vh, 1.3vh, 1.3vh);
+    padding: 10px;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 800;
+  }
+  
+  .login {
+    background-color: red;
+    padding: 5px 40px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+
+  @media screen and (max-width: 2000px) {
+    /* CSS rules to apply when the screen width is 768 pixels or less */
+    .navLinks {
+      display: none;
+    }
+  
+    .hamburger {
+      display: block;
+  
+    }
+  
+    .navEnd {
+      margin-left: 1000px;
+      margin-right: 30px;
+    }
+  }
+  
+  @media screen and (max-width: 650px) {
+    /* CSS rules to apply when the screen width is 768 pixels or less */
+    .navEnd {
+      display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1500px) {
+    /* CSS rules to apply when the screen width is 768 pixels or less */
+    .secondSec {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .left {
+      order: 2; /* Set a lower order for left section, so it appears below */
+      margin: 0 auto;
+      padding-left: 30%;
+    }
+  
+    .right {
+      order: 1; /* Set a higher order for right section, so it appears above */
+      margin: 0 auto;
+    }
+  
+    .circle {
+     left: 300px;
+    }
+  
+    .bigWoman {
+      right: -450px;
+    }
+  
+    .down {
+      margin-left: 250px;
+    }
+  
+    .hamburger img {
+     margin-left: 200px;
+    }
+  }
+  
